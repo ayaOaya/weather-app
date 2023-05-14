@@ -5,8 +5,15 @@ import Inputs from './components/Inputs'
 import TimeAndLocation from './components/TimeAndLocation'
 import TemperatureAndDetails from './components/TemperatureAndDetails'
 import Forcast from './components/Forcast'
+import getWeatherData from './services/weatherService'
 
 function App() {
+   const fetchWeather = async() => {
+    const data = await getWeatherData();
+    console.log(data);
+   };
+
+   fetchWeather();
 
   return (
     <>
@@ -17,7 +24,8 @@ function App() {
       <TimeAndLocation />
       <TemperatureAndDetails />
 
-      <Forcast />
+      <Forcast title="hourly forecast"/>
+      <Forcast title="daily forecast"/>
     </div>
 
     </>
