@@ -9,7 +9,7 @@ import getWeatherData from './services/weatherService'
 
 function App() {
    const fetchWeather = async() => {
-    const data = await getWeatherData();
+    const data = await getWeatherData('weather', {q: 'london'});
     console.log(data);
    };
 
