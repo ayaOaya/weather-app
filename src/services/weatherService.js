@@ -1,4 +1,4 @@
-const API_KEY = "0a08e2f1ded816569c521592591a901a";
+const API_KEY = "SCR_API-KEY";
 const BASE_URL = "https://api.openweathermap.org/data/2.5"
 
 const getWeatherData = (infoType, searchParams) => {
