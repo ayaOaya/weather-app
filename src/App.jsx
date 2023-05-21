@@ -5,9 +5,9 @@ import Inputs from './components/Inputs'
 import TimeAndLocation from './components/TimeAndLocation'
 import TemperatureAndDetails from './components/TemperatureAndDetails'
 import Forcast from './components/Forcast'
-import getFormattedWeatherData from './services/weatherService'
+/* import getFormattedWeatherData from './services/weatherService' */
+import  getFormattedWeatherData  from './services/weatherService';
 import { useEffect, useState } from 'react'
-import { data } from 'autoprefixer'
 import { ToastContainer, toast } from 'react-toastify'
 
 function App() {

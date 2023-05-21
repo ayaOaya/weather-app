@@ -1,8 +1,8 @@
-import { UilArrowUp, UilArrowDown, UilTemperatureHalf, UilTear, UilWind, UilSun, UilSunset } from '@iconscout/react-unicons'
+import { UilTemperatureHalf, UilTear, UilWind, UilSun, UilSunset } from '@iconscout/react-unicons'
 import { formatToLocalTime, iconUrlFromCode } from '../services/weatherService'
 
 const TemperatureAndDetails = ({weather: {
-   lat, timezone, temp, feels_like, temp_min, temp_max, humidity, name, dt, country, sunrise, sunset, details, icon, speed
+   timezone, temp, feels_like, temp_min, temp_max, humidity, sunrise, sunset, details, icon, speed
 }}) => {
   return (
     <>
